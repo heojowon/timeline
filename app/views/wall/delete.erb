@@ -1,0 +1,11 @@
+<div style="background-color: #e9eaed;">
+  <h1>Are you sure?</h1>
+  <form action="/wall/delete_complete" method="post">
+    <input type="hidden" name="id" value="<%= @post_delete.id %>">
+    <div style="background-color: #ffffff; width: 400px; border: 2px solid #d3d6db; padding: 10px; word-break: break-all;">
+      <h3 style="color: blue;"><%= @post_delete.name %></h3>
+      <p><%= @post_delete.content %></p>
+    </div>
+    <input type="submit" value="confirm">
+  </form>
+</div>
