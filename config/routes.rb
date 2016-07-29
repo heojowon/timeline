@@ -3,6 +3,7 @@ Timeline::Application.routes.draw do
   post "wall/write_complete"
 	get "wall/posts"
 	get "wall/edit/:id" => 'wall#edit'
+	post "wall/edit_complete"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
