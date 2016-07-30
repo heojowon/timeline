@@ -11,7 +11,7 @@
 <h1>Recent Posts</h1>
 	<% @posts.reverse.each do |post| %>
   <div style="background-color: #ffffff; width: 400px; border: 2px solid #d3d6db; padding: 10px; word-break: break-all;">
-    <h3 style="color: blue;"><%= post.name %></h3>
+    <h3 style="color: black;"><%= post.name %></h3>
     <p><%= post.content %></p>
 		<p style="font-size: 90%; text-align: right;"><a href="/wall/write_comment/<%= post.id %>">comment</a> <a href="/wall/edit/<%= post.id %>">edit</a> <a href="/wall/delete/<%= post.id %>">delete</a></p>
     <% post.comments.each do |comment| %>
